@@ -1,0 +1,37 @@
+﻿@model AddLibriViewModel;
+
+@{
+	ViewData["Title"] = "Aggiungi Libro";
+}
+
+<form>
+	<div class="form-group">
+		<label asp-for="Titolo" class="control-label">TITOLO</label>
+		<input asp-for="Titolo" type="text" class="form-control" />
+		<span asp-validation-for="Titolo" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Autore" class="control-label">AUTORE</label>
+		<input asp-for="Autore" type="text" class="form-control" />
+		<span asp-validation-for="Autore" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Genere" class="control-label">GENERE</label>
+		<input asp-for="Genere" type="text" class="form-control" />
+		<span asp-validation-for="Genere" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Disponibilità" class="control-label">DISPONIBILITA'</label>
+		<input asp-for="Disponibilità" type="checkbox" class="form-control" />
+		<span asp-validation-for="Disponibilità" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Copertina" class="control-label">URL IMMAGINE COPERTINA</label>
+		<input asp-for="Copertina" class="form-control" />
+		<span asp-validation-for="Copertina" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<button type="submit">SALVA</button>
+	</div>
+
+</form>

@@ -7,11 +7,7 @@ namespace Biblioteca.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly BibliotecaDbContext _context;
-    public HomeController(BibliotecaDbContext context)
-    {
-        _context = context;
-    }
+   
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
